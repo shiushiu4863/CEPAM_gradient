@@ -29,7 +29,7 @@ pip install torch torchvision torchaudio
 
 # Install other dependencies
 pip install scipy tqdm matplotlib torchinfo tensorboardX
-
+```
 
 ### Training
 
@@ -45,7 +45,7 @@ python main.py \
     --baseline cepam \
     --privacy_type gaussian \
     --sigma 0.01
-
+```
 
 For CEPAM Laplace mechanism:
 
@@ -59,6 +59,7 @@ python main.py \
     --baseline cepam \
     --privacy_type laplace \
     --b 0.1
+```
 
 For other baselines (fl_privacy_sdq, fl_privacy, fl_sdq, fl):
 
@@ -71,6 +72,7 @@ python main.py \
     --baseline fl_privacy_sdq \
     --privacy_type gaussian \
     --sigma 0.01
+```
 
 ### Testing
 
@@ -78,9 +80,15 @@ For CEPAM Gaussian:
 
 ```md
 python main.py --exp_name=fl_cepam_gaussian --eval --model cnn2
+```
 
 For CEPAM Laplace:
+
+```md
 python main.py --exp_name=fl_cepam_laplace --eval --model cnn2
+```
 
 For other baselines (fl_privacy_sdq, fl_privacy, fl_sdq, fl):
+```md
 python main.py --exp_name=fl_gaussian_sdq --eval --model cnn2
+```
