@@ -20,7 +20,6 @@ This code has been tested on Python 3.13.5, PyTorch 2.7.1 and CUDA 11.5.
 ### Installation
 
 ```md
-```bash
 # Create a conda environment (optional)
 conda create -n cepam python=3.12
 conda activate cepam
