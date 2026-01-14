@@ -1,1 +1,3 @@
-# CEPAM_gradient
+# Communication-Efficient and Privacy-Adaptable Mechanism for Federated Learning with gradient updates
+
+In this work, we further study CEPAM, a joint mechanism that achieve privacy while compressing gradient updates in FL. CEPAM leverages RSUQ, building upon its capibility to convert quantization distortion into an additive noise term with adjustable variance, independent of the quantized data. Within CEPAM, clients and server can tailor the privacy mechanism. In addition, the inherent natrue of RSUQ as a vector quantizer aids in reducing the compression ratio compared to its scalar counterparts. This repository contains a baisc PyTorch implementation of CEPAM for both Gaussian (CEPAM-Gaussian) and Laplace (CEPAM-Laplace) mechanisms. Additionally, we provide basci implementation of all the baseline mechanisms mentioned in the paper. 
