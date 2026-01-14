@@ -8,7 +8,7 @@ In this work, we further study CEPAM, a joint mechanism that achieve privacy whi
 
 This code has been tested on Python 3.13.5, PyTorch 2.7.1 and CUDA 11.5.
 
-## Prerequisite
+### Prerequisite
 
 1. PyTorch=2.7.1: https://pytorch.org
 2. scipy
@@ -16,3 +16,17 @@ This code has been tested on Python 3.13.5, PyTorch 2.7.1 and CUDA 11.5.
 4. matplotlib
 5. torchinfo
 6. TensorboardX: https://github.com/lanpa/tensorboardX
+
+### Installation
+
+```md
+```bash
+# Create a conda environment (optional)
+conda create -n cepam python=3.12
+conda activate cepam
+
+# Install PyTorch (with CUDA support)
+pip install torch torchvision torchaudio
+
+# Install other dependencies
+pip install scipy tqdm matplotlib torchinfo tensorboardX
